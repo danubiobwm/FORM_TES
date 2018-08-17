@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de contato</title>
+
+    <!-- CSS do validador -->
+    <link href="css/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+    <link href="css/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+    <link href="css/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+
+    <!-- Css do formulario -->
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <form action="envia.php" method="POST">
+            <!--  chama o envia.php -->
+
+            <div class="formulario-texto">Assunto</div>
+            <div class="formulario-campo">
+                <span id="sprytextfield5">
+                    <input type="text" name="assunto" class="textfield-nome" />
+                    <br />
+                    <span class="textfieldRequiredMsg">Digite o assunto</span>
+                </span>
+            </div>
+
+
+            <div style="float:left; width:100%;"> </div>
+            <div class="formulario-texto">Mensagem</div>
+            <div class="formulario-campo">
+                <span id="sprytextarea1">
+                    <textarea name="mensagem" cols="35" rows="6"></textarea>
+                    <br />
+                    <span class="textareaRequiredMsg">Digite sua mensagem</span>
+                </span>
+            </div>
+
+            <div>
+                <input name="enviar" type="reset" value="Limpar" class="btn-contato-reset" />
+                <input name="enviar" type="submit" value="Enviar" class="btn-contato-enviar" />
+            </div>
+
+
+        </form>
+
+    </div>
+    <!--Fim do Conteudo Paginas-->
+
+    <!-- Chama validação do formulário -->
+
+    <script type="text/javascript" src="js/SpryValidationTextField.js" language="javascript"></script>
+    <script type="text/javascript" src="js/SpryValidationTextarea.js" language="javascript"></script>
+    <script type="text/javascript" src="js/SpryValidationSelect.js" language="javascript"></script>
+
+    <script type="text/javascript">
+        var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+        var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+    </script>
+
+
+
+</body>
+
+</html>

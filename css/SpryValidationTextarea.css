@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.textareaRequiredMsg,
+.textareaMinCharsMsg,
+.textareaMaxCharsMsg,
+.textareaValidMsg {
+    display: none;
+}
+
+.textareaRequiredState .textareaRequiredMsg,
+.textareaMinCharsState .textareaMinCharsMsg,
+.textareaMaxCharsState .textareaMaxCharsMsg {
+    display: inline;
+    color: #f00;
+    border: 0px solid #CC3333;
+}
+
+.textareaValidState textarea,
+textarea.textareaValidState {
+    background-color: #CFC;
+    border: 1px solid #CFC;
+}
+
+textarea.textareaRequiredState,
+.textareaRequiredState textarea,
+textarea.textareaMinCharsState,
+.textareaMinCharsState textarea,
+textarea.textareaMaxCharsState,
+.textareaMaxCharsState textarea {
+    background-color: #FFBFBF;
+    border: 1px solid #FFBFBF;
+}
+
+.textareaFocusState textarea,
+textarea.textareaFocusState {
+    background-color: #CCC;
+    border: 1px solid #7f9db9;
+}
+
+.textareaFlashState textarea,
+textarea.textareaFlashState {
+    color: red !important;
+}
+
+textarea.textareaHintState,
+.textareaHintState textarea {}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+.selectRequiredMsg, .selectInvalidMsg {
+	display: none;
+}
+
+
+.selectRequiredState .selectRequiredMsg,
+.selectInvalidState .selectInvalidMsg {
+	display: inline;
+	color: #f00;
+	border: 0px solid #CC3333;
+
+}
+
+
+ 
+
+.selectValidState select, select.selectValidState {
+	background-color: #CFC;
+}
+
+
+select.selectRequiredState, .selectRequiredState select,
+select.selectInvalidState, .selectInvalidState select {
+	background-color:#FFBFBF;
+}
+
+.selectFocusState select, select.selectFocusState {
+	background-color:#F8F8F8;
+}

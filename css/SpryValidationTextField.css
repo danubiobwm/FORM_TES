@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.textfieldRequiredMsg,
+.textfieldInvalidFormatMsg,
+.textfieldMinValueMsg,
+.textfieldMaxValueMsg,
+.textfieldMinCharsMsg,
+.textfieldMaxCharsMsg,
+.textfieldValidMsg {
+    display: none;
+}
+
+.textfieldRequiredState .textfieldRequiredMsg,
+.textfieldInvalidFormatState .textfieldInvalidFormatMsg,
+.textfieldMinValueState .textfieldMinValueMsg,
+.textfieldMaxValueState .textfieldMaxValueMsg,
+.textfieldMinCharsState .textfieldMinCharsMsg,
+.textfieldMaxCharsState .textfieldMaxCharsMsg {
+    display: inline;
+    color: #f00;
+    border: 0px solid #CC3333;
+}
+
+.textfieldValidState input,
+input.textfieldValidState {
+    background-color: #CFC;
+    border: 1px solid #CFC;
+}
+
+input.textfieldRequiredState,
+.textfieldRequiredState input,
+input.textfieldInvalidFormatState,
+.textfieldInvalidFormatState input,
+input.textfieldMinValueState,
+.textfieldMinValueState input,
+input.textfieldMaxValueState,
+.textfieldMaxValueState input,
+input.textfieldMinCharsState,
+.textfieldMinCharsState input,
+input.textfieldMaxCharsState,
+.textfieldMaxCharsState input {
+    background-color: #FFBFBF;
+    border: 1px solid #FFBFBF;
+}
+
+.textfieldFocusState input,
+input.textfieldFocusState {
+    background-color: #CCC;
+    border: 1px solid #7f9db9;
+}
+
+.textfieldFlashText input,
+input.textfieldFlashText {
+    color: red !important;
+}
+
+.textfieldHintState input,
+input.textfieldHintState {}
